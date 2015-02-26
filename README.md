@@ -11,13 +11,13 @@ JMSBindingProvider jMSBindingProvider;
 to your application.
 
 This settings depends on your App server setup:
-
+```java
 jndi.naming.provider.url=http-remoting://127.0.0.1:8080
 jndi.naming.security.principal=quickstartUser
 jndi.naming.security.credentials=quickstartPwd1!
 jndi.naming.factory.initial=org.jboss.naming.remote.client.InitialContextFactory
 jndi.connection.factory=jms/RemoteConnectionFactory
-
+```
 Outbound query:
 ```java
 jms.outboundExample.topic=jms/topic/outboundTopic
