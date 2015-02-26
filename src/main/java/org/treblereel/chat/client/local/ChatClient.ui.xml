@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:b="urn:import:org.gwtbootstrap3.client.ui">
+
+	<ui:style>
+	.outer {
+		display: table;
+		height: 100%;
+		width: 100%;
+	}
+	
+	.mainPanel {
+		height: 100%;
+		width: 100%;
+		padding: 20px;
+		margin: 15px;
+	}
+	
+	.chatPanel {
+		padding: 20px;
+	}
+	
+	.southPanel {
+		width: 80%;
+		position: static;
+	}
+	
+	.userPanel {
+		margin: 20px;
+	}
+	
+	.inner {
+		background: #DDD;
+		display: table-cell;
+		vertical-align: middle;
+	}
+	
+	.aboutText {
+		width: 60%;
+		padding: 10px;
+		text-align: left;
+	}
+	</ui:style>
+	<g:VerticalPanel>
+	</g:VerticalPanel>
+	
+	
+</ui:UiBinder>
