@@ -91,14 +91,22 @@ public class ChatClient extends Composite {
   }
   
   private final static String text = "Errai-JMS plugin for 3.1.1-SNAPSHOT <br><br>" 
-  + " <br>You see simple demo, just put any text into the textbox and press Send button, your message will be send to the topic/outbound Topic,<br>"+
-    "after system will catch that message and put it in to topic/inboundTopic, you will see that message on the right textbox, because we are <br>" +
-    "also subscribed to that topic to show you that ability.  You also can open several browser windows to determine that all client can receive <br> " +
-    "your message. That plugin allow users to subscribe to the Jms Topic and send messages to any topics. From client side it works like original <br>" +
-    "Errai MessageBus messaging, you only need to subscribe to the specific subject or send to some subject, for instance, if you want to send a <br>" +
-    "message to “topic/inboundTopic” you should send a message to this subject, and vise versa. One thing to note, at this time Errai-Jms support <br>"+
-    "only Topics, not Queues, but if someone need, i can add this functionality. All necessary properties kept in ErraiApp.properties. To add Jms <br>" +
-    " support you only need to <br><br>" +
+  
+    
+    + " <br>You see a simple demo, just put any text into the textbox and press the Send button, your message<br>"
+    + " will be sent to the topic/outboundTopic. Afterwards the system will catch that message and put it in to<br>"
+    + " topic/inboundTopic, you will see that message on the right textbox, because we are also subscribed to <br>"
+    + "that topic to show you that ability. You also can open several browser windows to determine that all <br>"
+    + "clients can receive your message.<br>"
+
+    + "That plugin allows users to subscribe to the Jms Topic and send messages to any topic. From the client side<br>"
+    + " it works like the original Errai MessageBus messaging, you only need to subscribe to the specific subject <br>"
+    + "or send to some subject, for instance, if you want to send a message to “topic/inboundTopic” you should send <br>"
+    + "a message to this subject, and vise versa. One thing to note, at this time Errai-Jms only supports Topics, <br>"
+    + "not Queues, but if someone needs, i can add this functionality. All necessary properties are kept in <br>"
+    + "ErraiApp.properties. To add Jms support you only need to<br><br>" +  
+  
+  
 
   "@Inject"+
   "JMSBindingProvider jMSBindingProvider;"+
